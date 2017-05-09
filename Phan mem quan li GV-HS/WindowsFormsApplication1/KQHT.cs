@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
     public partial class KQHT : Form
     {
         public static string mahs = string.Empty, tenhs = string.Empty, ns = string.Empty, lop = string.Empty;
+
         public KQHT()
         {
             InitializeComponent();

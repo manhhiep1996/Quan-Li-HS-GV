@@ -53,6 +53,12 @@
     <Compile Include="HuongDan.Designer.cs">
       <DependentUpon>HuongDan.cs</DependentUpon>
     </Compile>
+    <Compile Include="KQHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHT.Designer.cs">
+      <DependentUpon>KQHT.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinHS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
     <EmbeddedResource Include="HuongDan.resx">
       <DependentUpon>HuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHT.resx">
+      <DependentUpon>KQHT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinHS.resx">
       <DependentUpon>ThongTinHS.cs</DependentUpon>

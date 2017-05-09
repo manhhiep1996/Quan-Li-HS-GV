@@ -20,6 +20,12 @@ C:\Users\Hiep\Documents\Visual Studio 2015\Projects\Phan mem quan li GV-HS\Windo
 C:\Users\Hiep\Documents\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Hiep\Documents\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Hiep\Documents\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+<<<<<<< HEAD
 F:\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 F:\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 F:\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+=======
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+>>>>>>> origin/master

@@ -29,3 +29,6 @@ C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\Window
 C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 >>>>>>> origin/master
+D:\Thuc TapNhom222222222\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Thuc TapNhom222222222\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Thuc TapNhom222222222\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

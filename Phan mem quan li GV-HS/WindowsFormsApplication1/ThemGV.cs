@@ -30,7 +30,26 @@ namespace WindowsFormsApplication1
 
         private void btThem_Click(object sender, EventArgs e)
         {
-           
+            string sql = "ThemGV ";
+            SqlCommand com = new SqlCommand(sql, Login.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@magv", txtMaGV.Text);
+            com.Parameters.AddWithValue("@ten", txtHT.Text);
+            com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNS.Text));
+            com.Parameters.AddWithValue("@gt", txtGT.Text);
+            com.Parameters.AddWithValue("@dt", txtDT.Text);
+            com.Parameters.AddWithValue("@trinhdohv", txtTrinhDoHV.Text);
+            com.Parameters.AddWithValue("@sdt", txtMaGV.Text);
+            com.Parameters.AddWithValue("@email", txtMaGV.Text);
+            com.Parameters.AddWithValue("@bomon", txtMaGV.Text);
+            com.Parameters.AddWithValue("@chucvu", txtMaGV.Text);
+            int count = com.ExecuteNonQuery();
+            if (count > 0)
+            {
+                MessageBox.Show("Thêm thành công", "Thông báo");
+            }
+            else
+                MessageBox.Show("Không thể thêm", "Thông báo");
         }
     }
 }

@@ -35,3 +35,22 @@ D:\Thuc TapNhom222222222\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplic
 D:\aaaaaaaaaa\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 D:\aaaaaaaaaa\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 D:\aaaaaaaaaa\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.HuongDan.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.KQHT.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThongTinHS.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.LichDay.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaGiaoVien.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.SuaHocSinh.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Login.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Main.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemGV.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemHS.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.ThemLichDay.resources
+E:\Trần Dung\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

@@ -266,12 +266,12 @@ namespace WindowsFormsApplication1
 
         private void dgvHS_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            ThongTinHS.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
-            ThongTinHS.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
-            ThongTinHS.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
-            ThongTinHS.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
+            KQHT.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
+            KQHT.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
+            KQHT.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
+            KQHT.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
 
-            ThongTinHS kq = new ThongTinHS();
+            KQHT kq = new KQHT();
             kq.Show();
         }
 

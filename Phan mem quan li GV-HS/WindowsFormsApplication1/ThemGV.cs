@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
 
         private void btCancel_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void btThem_Click(object sender, EventArgs e)

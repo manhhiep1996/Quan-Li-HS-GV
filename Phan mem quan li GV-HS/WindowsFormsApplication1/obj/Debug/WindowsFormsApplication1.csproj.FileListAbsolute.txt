@@ -23,3 +23,6 @@ C:\Users\Hiep\Documents\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debu
 C:\Users\Hiep\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Hiep\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Hiep\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Phong_Tung\Documents\GitHub\Quan-Li-HS-GV\Phan mem quan li GV-HS\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -96,7 +96,25 @@ namespace WindowsFormsApplication1
 
         private void TimKiemGV()
         {
-            
+            string sql = "TimKiemGV ";
+            SqlCommand com = new SqlCommand(sql, Login.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@magv", txbMaGV.Text);
+            com.Parameters.AddWithValue("@ten", txbTenGV.Text);
+            com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNSGV.Text));
+            com.Parameters.AddWithValue("@bomon", cboBM.Text);
+
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvGV.DataSource = dt;
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         private void txbMaGV_Leave(object sender, EventArgs e)
@@ -137,7 +155,19 @@ namespace WindowsFormsApplication1
 
         private void TimKiemHS()
         {
-            
+            string sql = "TimKiemHS ";
+            SqlCommand com = new SqlCommand(sql, Login.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@mahs", txbMaHS.Text);
+            com.Parameters.AddWithValue("@ten", txbTenHS.Text);
+            com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNSHS.Text));
+            com.Parameters.AddWithValue("@lop", cboLop.Text);
+            com.Parameters.AddWithValue("@namhoc", cboNamHoc.Text);
+
+            SqlDataAdapter da = new SqlDataAdapter(com);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgvHS.DataSource = dt;
         }
 
         private void txbMaHS_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -180,7 +210,7 @@ namespace WindowsFormsApplication1
         {
             TimKiemHS();
         }
-        
+
         private void dgvGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SuaGiaoVien.magv = Convert.ToString(dgvGV.CurrentRow.Cells["IdGV"].Value);
@@ -254,7 +284,7 @@ namespace WindowsFormsApplication1
         private void btXoaHS_Click(object sender, EventArgs e)
         {
             
-            
+
         }
 
         private void btXoaGV_Click(object sender, EventArgs e)

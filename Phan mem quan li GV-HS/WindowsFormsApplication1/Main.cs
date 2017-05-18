@@ -281,15 +281,44 @@ namespace WindowsFormsApplication1
             hd.Show();
         }
 
+
         private void btXoaHS_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Bạn muốn xóa bản ghi này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string sql = "XoaHS ";
+                SqlCommand com = new SqlCommand(sql, Login.con);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@ma", Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value));
+                int count = com.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa thành công", "Thông báo");
+                    dgvHS.Refresh();
+                }
+                else
+                    MessageBox.Show("Không thể xóa", "Thông báo");
+            }
 
         }
 
         private void btXoaGV_Click(object sender, EventArgs e)
         {
-            
+            if (MessageBox.Show("Bạn muốn xóa bản ghi này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                string sql = "XoaGV ";
+                SqlCommand com = new SqlCommand(sql, Login.con);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@magv", Convert.ToString(dgvGV.CurrentRow.Cells["IdGV"].Value));
+                int count = com.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa thành công", "Thông báo");
+                    dgvGV.Refresh();
+                }
+                else
+                    MessageBox.Show("Không thể xóa", "Thông báo");
+            }
         }
     }
 }

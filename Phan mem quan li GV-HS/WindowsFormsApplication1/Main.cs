@@ -96,25 +96,7 @@ namespace WindowsFormsApplication1
 
         private void TimKiemGV()
         {
-            string sql = "TimKiemGV ";
-            SqlCommand com = new SqlCommand(sql, Login.con);
-            com.CommandType = CommandType.StoredProcedure;
-            com.Parameters.AddWithValue("@magv", txbMaGV.Text);
-            com.Parameters.AddWithValue("@ten", txbTenGV.Text);
-            com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNSGV.Text));
-            com.Parameters.AddWithValue("@bomon", cboBM.Text);
-
-            try
-            {
-                SqlDataAdapter da = new SqlDataAdapter(com);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgvGV.DataSource = dt;
-            }
-            catch(SqlException e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+            
         }
 
         private void txbMaGV_Leave(object sender, EventArgs e)

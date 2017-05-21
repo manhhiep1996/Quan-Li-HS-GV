@@ -24,15 +24,43 @@ namespace WindowsFormsApplication1
 
         private void SuaGiaoVien_Load(object sender, EventArgs e)
         {
-            
+            txtMaGV.Text = magv;
+            txtHT.Text = tengv;
+            dtpNS.Text = ns;
+            txtGT.Text = gt;
+            txtDT.Text = dt;
+            txtTrinhDoHV.Text = trinhdohv;
+            txtSoDT.Text = sodt;
+            txtEmail.Text = email;
+            cboBM.Text = bm;
+            txtChucVu.Text = chucvu;
         }
         private void btSua_Click(object sender, EventArgs e)
         {
-            
+            string sql = "SuaGV ";
+            SqlCommand com = new SqlCommand(sql, Login.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@magv", txtMaGV.Text);
+            com.Parameters.AddWithValue("@ten", txtHT.Text);
+            com.Parameters.AddWithValue("@ns", Convert.ToDateTime(dtpNS.Text));
+            com.Parameters.AddWithValue("@gt", txtGT.Text);
+            com.Parameters.AddWithValue("@dt", txtDT.Text);
+            com.Parameters.AddWithValue("@trinhdohv", txtTrinhDoHV.Text);
+            com.Parameters.AddWithValue("@sdt", txtSoDT.Text);
+            com.Parameters.AddWithValue("@email", txtEmail.Text);
+            com.Parameters.AddWithValue("@bomon", cboBM.Text);
+            com.Parameters.AddWithValue("@chucvu", txtChucVu.Text);
+            int count = com.ExecuteNonQuery();
+            if (count > 0)
+            {
+                MessageBox.Show("Sửa thành công", "Thông báo");
+            }
+            else
+                MessageBox.Show("Không thể sửa", "Thông báo");
         }
         private void btCancel_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }

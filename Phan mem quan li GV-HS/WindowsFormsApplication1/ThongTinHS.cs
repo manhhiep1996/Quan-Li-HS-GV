@@ -11,14 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class KQHT : Form
+    public partial class ThongTinHS : Form
     {
         public static string mahs = string.Empty, tenhs = string.Empty, ns = string.Empty, lop = string.Empty;
-
-        public KQHT()
-        {
-            InitializeComponent();
-        }
 
         private void KQHT_Load(object sender, EventArgs e)
         {
@@ -37,6 +32,13 @@ namespace WindowsFormsApplication1
             da.Fill(dt);
             dgvTTHT.DataSource = dt;
             dgvTTHT.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
+
+        public ThongTinHS()
+        {
+            InitializeComponent();
+        }
+
     }
 }

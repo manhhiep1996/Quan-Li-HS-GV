@@ -23,25 +23,6 @@ namespace WindowsFormsApplication1
         private void Login_Load(object sender, EventArgs e)
         {
         }
-        private void Login_GV()
-        {
-
-        }
-
-        private void btCancel_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btLogin_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ckbShow_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void txtPass_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-        }
+        
     }
 }

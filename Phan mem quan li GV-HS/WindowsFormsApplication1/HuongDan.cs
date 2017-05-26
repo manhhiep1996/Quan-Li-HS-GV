@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void HuongDan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

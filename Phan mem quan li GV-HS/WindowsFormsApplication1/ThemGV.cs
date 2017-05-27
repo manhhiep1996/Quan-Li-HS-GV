@@ -47,6 +47,7 @@ namespace WindowsFormsApplication1
             if (count > 0)
             {
                 MessageBox.Show("Thêm thành công", "Thông báo");
+                this.Close();
             }
             else
                 MessageBox.Show("Không thể thêm", "Thông báo");

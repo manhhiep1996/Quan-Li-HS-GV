@@ -55,6 +55,7 @@
             this.ckbShow.TabIndex = 22;
             this.ckbShow.Text = "Show Password";
             this.ckbShow.UseVisualStyleBackColor = true;
+            this.ckbShow.CheckedChanged += new System.EventHandler(this.ckbShow_CheckedChanged);
             // 
             // btCancel
             // 
@@ -83,6 +84,7 @@
             this.txtPass.Size = new System.Drawing.Size(164, 20);
             this.txtPass.TabIndex = 19;
             this.txtPass.UseSystemPasswordChar = true;
+            this.txtPass.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtPass_PreviewKeyDown);
             // 
             // txtName
             // 

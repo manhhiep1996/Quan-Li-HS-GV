@@ -54,6 +54,7 @@ namespace WindowsFormsApplication1
             if (count > 0)
             {
                 MessageBox.Show("Sửa thành công", "Thông báo");
+                this.Close();
             }
             else
                 MessageBox.Show("Không thể sửa", "Thông báo");

@@ -18,11 +18,6 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void ThemHS_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btThem_Click(object sender, EventArgs e)
         {
             string sql = "ThemGV ";
@@ -39,6 +34,7 @@ namespace WindowsFormsApplication1
             if (count > 0)
             {
                 MessageBox.Show("Thêm thành công", "Thông báo");
+                this.Close();
             }
             else
                 MessageBox.Show("Không thể thêm", "Thông báo");

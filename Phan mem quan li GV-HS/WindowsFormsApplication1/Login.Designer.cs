@@ -41,81 +41,81 @@
             // lbWrong
             // 
             this.lbWrong.AutoSize = true;
-            this.lbWrong.Location = new System.Drawing.Point(67, 156);
+            this.lbWrong.Location = new System.Drawing.Point(67, 147);
             this.lbWrong.Name = "lbWrong";
             this.lbWrong.Size = new System.Drawing.Size(0, 13);
-            this.lbWrong.TabIndex = 15;
+            this.lbWrong.TabIndex = 23;
             // 
             // ckbShow
             // 
             this.ckbShow.AutoSize = true;
-            this.ckbShow.Location = new System.Drawing.Point(96, 125);
+            this.ckbShow.Location = new System.Drawing.Point(96, 116);
             this.ckbShow.Name = "ckbShow";
             this.ckbShow.Size = new System.Drawing.Size(102, 17);
-            this.ckbShow.TabIndex = 14;
+            this.ckbShow.TabIndex = 22;
             this.ckbShow.Text = "Show Password";
             this.ckbShow.UseVisualStyleBackColor = true;
             this.ckbShow.CheckedChanged += new System.EventHandler(this.ckbShow_CheckedChanged);
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(164, 172);
+            this.btCancel.Location = new System.Drawing.Point(164, 163);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(75, 23);
-            this.btCancel.TabIndex = 13;
+            this.btCancel.TabIndex = 21;
             this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(45, 172);
+            this.btLogin.Location = new System.Drawing.Point(45, 163);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(75, 23);
-            this.btLogin.TabIndex = 12;
+            this.btLogin.TabIndex = 20;
             this.btLogin.Text = "Login";
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(96, 90);
+            this.txtPass.Location = new System.Drawing.Point(96, 81);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(164, 20);
-            this.txtPass.TabIndex = 11;
+            this.txtPass.TabIndex = 19;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtPass_PreviewKeyDown);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(96, 52);
+            this.txtName.Location = new System.Drawing.Point(96, 43);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(164, 20);
-            this.txtName.TabIndex = 10;
+            this.txtName.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 93);
+            this.label2.Location = new System.Drawing.Point(24, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 9;
+            this.label2.TabIndex = 17;
             this.label2.Text = "Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 55);
+            this.label1.Location = new System.Drawing.Point(24, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 16;
             this.label1.Text = "Username";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 229);
+            this.ClientSize = new System.Drawing.Size(300, 242);
             this.Controls.Add(this.lbWrong);
             this.Controls.Add(this.ckbShow);
             this.Controls.Add(this.btCancel);

@@ -24,15 +24,39 @@ namespace WindowsFormsApplication1
 
         private void SuaHocSinh_Load(object sender, EventArgs e)
         {
-         
+
+            txtMaHS.Text = mahs;
+            txtHT.Text = tenhs;
+            dtpNS.Text = ns;
+            txtGT.Text = gt;
+            txtDT.Text = dt;
+            txtDC.Text = diachi;
+            txtLop.Text = lop;
         }
         private void btSua_Click(object sender, EventArgs e)
         {
-          
+            string sql = "SuaHS ";
+            SqlCommand com = new SqlCommand(sql, Login.con);
+            com.CommandType = CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@mahs", txtMaHS.Text);
+            com.Parameters.AddWithValue("@ten", txtHT.Text);
+            com.Parameters.AddWithValue("@ngaysinh", Convert.ToDateTime(dtpNS.Text));
+            com.Parameters.AddWithValue("@gt", txtGT.Text);
+            com.Parameters.AddWithValue("@dt", txtDT.Text);
+            com.Parameters.AddWithValue("@diachi", txtDC.Text);
+            com.Parameters.AddWithValue("@lop", txtLop.Text);
+            int count = com.ExecuteNonQuery();
+            if (count > 0)
+            {
+                MessageBox.Show("Sửa thành công", "Thông báo");
+                this.Close();
+            }
+            else
+                MessageBox.Show("Không thể sửa", "Thông báo");
         }
         private void btCancel_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
         }
     }
 }

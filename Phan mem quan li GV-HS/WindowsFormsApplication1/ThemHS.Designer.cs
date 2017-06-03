@@ -66,10 +66,10 @@
             this.grbTTGV.Controls.Add(this.txtHT);
             this.grbTTGV.Controls.Add(this.label5);
             this.grbTTGV.Controls.Add(this.label6);
-            this.grbTTGV.Location = new System.Drawing.Point(28, 26);
+            this.grbTTGV.Location = new System.Drawing.Point(28, 29);
             this.grbTTGV.Name = "grbTTGV";
             this.grbTTGV.Size = new System.Drawing.Size(439, 354);
-            this.grbTTGV.TabIndex = 21;
+            this.grbTTGV.TabIndex = 22;
             this.grbTTGV.TabStop = false;
             this.grbTTGV.Text = "Thêm mới học sinh";
             // 
@@ -120,7 +120,6 @@
             this.btCancel.TabIndex = 8;
             this.btCancel.Text = "Hủy";
             this.btCancel.UseVisualStyleBackColor = true;
-            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // txtDC
             // 
@@ -137,7 +136,6 @@
             this.btThem.TabIndex = 7;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
-            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // txtDT
             // 
@@ -213,7 +211,7 @@
             this.Controls.Add(this.grbTTGV);
             this.Name = "ThemHS";
             this.Text = "Thêm học sinh";
-            this.Load += new System.EventHandler(this.ThemHS_Load);
+//            this.Load += new System.EventHandler(this.ThemHS_Load);
             this.grbTTGV.ResumeLayout(false);
             this.grbTTGV.PerformLayout();
             this.ResumeLayout(false);

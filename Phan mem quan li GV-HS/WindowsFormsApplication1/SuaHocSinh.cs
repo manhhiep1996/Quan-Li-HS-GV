@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class SuaHocSinh : Form
     {
+        // chuổi  kết nối cơ sở dữ liệu
         public static string mahs = string.Empty, tenhs = string.Empty, ns = string.Empty, gt = string.Empty, dt = string.Empty,
             diachi = string.Empty, lop = string.Empty;
 
@@ -21,7 +22,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
+        // hàm khởi tạo
         private void SuaHocSinh_Load(object sender, EventArgs e)
         {
 

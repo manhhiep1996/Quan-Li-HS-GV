@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class ThemLichDay : Form
     {
+        // chuỗi kết nối cơ sở dữ liệu
         public static string magv = string.Empty, tengv = string.Empty, monhoc = string.Empty;
 
         private void btCancel_Click(object sender, EventArgs e)
@@ -30,7 +31,6 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
         private void btOK_Click(object sender, EventArgs e)
         {
             string sql = "ThemLichDay ";

@@ -55,56 +55,57 @@ namespace WindowsFormsApplication1
 
         private void dgvLichDay_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-             if (e.KeyValue == 46)
-            {
-                if (MessageBox.Show("Bạn muốn xóa bản ghi này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (e.KeyValue == 46)
                 {
-                    string sql = "XoaLichDay ";
-                    SqlCommand com = new SqlCommand(sql, Login.con);
-                    com.CommandType = CommandType.StoredProcedure;
-                    com.Parameters.AddWithValue("@magv", magv);
-                    com.Parameters.AddWithValue("@lop", tenlop);
-                    com.Parameters.AddWithValue("@nienkhoa", nienkhoa);
-                    com.Parameters.AddWithValue("@namhoc", namhoc);
-                    com.Parameters.AddWithValue("@hocki", hocki);
-                    com.Parameters.AddWithValue("@phonghoc", phonghoc);
-                    com.Parameters.AddWithValue("@thoigian", lichhoc);
-                    int count = com.ExecuteNonQuery();
-                    if (count > 0)
+                    if (MessageBox.Show("Bạn muốn xóa bản ghi này?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        MessageBox.Show("Xóa thành công", "Thông báo");
-                        LoadData();
+                        string sql = "XoaLichDay ";
+                        SqlCommand com = new SqlCommand(sql, Login.con);
+                        com.CommandType = CommandType.StoredProcedure;
+                        com.Parameters.AddWithValue("@magv", magv);
+                        com.Parameters.AddWithValue("@lop", tenlop);
+                        com.Parameters.AddWithValue("@nienkhoa", nienkhoa);
+                        com.Parameters.AddWithValue("@namhoc", namhoc);
+                        com.Parameters.AddWithValue("@hocki", hocki);
+                        com.Parameters.AddWithValue("@phonghoc", phonghoc);
+                        com.Parameters.AddWithValue("@thoigian", lichhoc);
+                        int count = com.ExecuteNonQuery();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Xóa thành công", "Thông báo");
+                            LoadData();
+                        }
+                        else
+                            MessageBox.Show("Không thể xóa", "Thông báo");
                     }
-                    else
-                        MessageBox.Show("Không thể xóa", "Thông báo");
                 }
+           
+            if (e.KeyValue == 13)
+            {
+                string sql = "SuaLichDay ";
+                SqlCommand com = new SqlCommand(sql, Login.con);
+                com.CommandType = CommandType.StoredProcedure;
+                com.Parameters.AddWithValue("@magv", magv);
+                com.Parameters.AddWithValue("@lop", tenlop);
+                com.Parameters.AddWithValue("@nienkhoa", nienkhoa);
+                com.Parameters.AddWithValue("@namhoc", namhoc);
+                com.Parameters.AddWithValue("@hocki", hocki);
+                com.Parameters.AddWithValue("@phonghoc", phonghoc);
+                com.Parameters.AddWithValue("@thoigian", lichhoc);
+                int count = com.ExecuteNonQuery();
+                if (count > 0)
+                {
+                    MessageBox.Show("Xóa thành công", "Thông báo");
+                }
+                else
+                    MessageBox.Show("Không thể xóa", "Thông báo");
             }
-             if (e.KeyValue == 13)
-             {
-                 string sql = "SuaLichDay ";
-                 SqlCommand com = new SqlCommand(sql, Login.con);
-                 com.CommandType = CommandType.StoredProcedure;
-                 com.Parameters.AddWithValue("@magv", magv);
-                 com.Parameters.AddWithValue("@lop", tenlop);
-                 com.Parameters.AddWithValue("@nienkhoa", nienkhoa);
-                 com.Parameters.AddWithValue("@namhoc", namhoc);
-                 com.Parameters.AddWithValue("@hocki", hocki);
-                 com.Parameters.AddWithValue("@phonghoc", phonghoc);
-                 com.Parameters.AddWithValue("@thoigian", lichhoc);
-                 int count = com.ExecuteNonQuery();
-                 if (count > 0)
-                 {
-                     MessageBox.Show("Xóa thành công", "Thông báo");
-                 }
-                 else
-                     MessageBox.Show("Không thể xóa", "Thông báo");
-             }
-             LoadData();
+            LoadData();
         }
 
         private void thêmMiớiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemLichDay.magv = magv;
+             ThemLichDay.magv = magv;
             ThemLichDay.monhoc = bomon;
             ThemLichDay.tengv = tengv;
             ThemLichDay add = new ThemLichDay();
@@ -113,7 +114,7 @@ namespace WindowsFormsApplication1
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+             this.Close();
         }
     }
 }

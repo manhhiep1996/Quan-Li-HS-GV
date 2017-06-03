@@ -111,7 +111,7 @@ namespace WindowsFormsApplication1
                 da.Fill(dt);
                 dgvGV.DataSource = dt;
             }
-            catch(SqlException e)
+            catch (SqlException e)
             {
                 Console.WriteLine(e.ToString());
             }
@@ -210,7 +210,7 @@ namespace WindowsFormsApplication1
         {
             TimKiemHS();
         }
-        
+
         private void dgvGV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SuaGiaoVien.magv = Convert.ToString(dgvGV.CurrentRow.Cells["IdGV"].Value);
@@ -266,12 +266,12 @@ namespace WindowsFormsApplication1
 
         private void dgvHS_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            KQHT.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
-            KQHT.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
-            KQHT.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
-            KQHT.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
+            ThongTinHS.mahs = Convert.ToString(dgvHS.CurrentRow.Cells["IdHS"].Value);
+            ThongTinHS.tenhs = Convert.ToString(dgvHS.CurrentRow.Cells["TenHS"].Value);
+            ThongTinHS.lop = Convert.ToString(dgvHS.CurrentRow.Cells["TenLop"].Value);
+            ThongTinHS.ns = Convert.ToString(dgvHS.CurrentRow.Cells["NS"].Value);
 
-            KQHT kq = new KQHT();
+            ThongTinHS kq = new ThongTinHS();
             kq.Show();
         }
 
@@ -280,6 +280,7 @@ namespace WindowsFormsApplication1
             HuongDan hd = new HuongDan();
             hd.Show();
         }
+
 
         private void btXoaHS_Click(object sender, EventArgs e)
         {
@@ -298,7 +299,7 @@ namespace WindowsFormsApplication1
                 else
                     MessageBox.Show("Không thể xóa", "Thông báo");
             }
-            
+
         }
 
         private void btXoaGV_Click(object sender, EventArgs e)

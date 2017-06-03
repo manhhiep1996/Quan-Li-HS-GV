@@ -49,16 +49,15 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void btCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btLogin_Click(object sender, EventArgs e)
         {
             Login_GV();
         }
 
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void ckbShow_CheckedChanged(object sender, EventArgs e)
         {
             if (ckbShow.Checked)
@@ -77,11 +76,6 @@ namespace WindowsFormsApplication1
             {
                 Login_GV();
             }
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
